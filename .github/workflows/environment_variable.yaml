@@ -1,0 +1,11 @@
+name: Environment Variable
+
+on: push
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    env:
+      BRANCH: main
+    steps:
+      - run: echo ${BRANCH}
